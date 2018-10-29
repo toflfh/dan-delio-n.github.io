@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Homework #1</title>
+    <style>
+        /* 헤더*/
+        header {
+            max-width: 1500px;
+        }
+
+        #headA {
+            display: inline-block;
+            line-height: 60px;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-bottom: 0px;
+
+        }
+
+        #headA a:hover {
+            background-color: #000000;
+        }
+
+        #headB {
+            float: right;
+            margin-right: 20px;
+            color: aliceblue;
+            padding-bottom: 16px;
+        }
+
+        /*메인메뉴*/
+
+        #main_manu ul {
+            margin: 0px;
+            padding: 0px;
+            margin-top: 10px;
+        }
+
+        #main_menu li {
+            list-style-type: none;
+            display: inline-block;
+            padding: 0px 0px 5px 0px;
+            margin-top: 18px;
+        }
+
+        #main_menu li a {
+            text-decoration: none;
+            color: #8c29c1;
+            padding: 20px 5px;
+            margin-top: 10px;
+        }
+
+        #main_menu a:hover {
+            color: #ffffff;
+            background-color: #be59f4;
+            border-bottom: 2px solid black;
+        }
+
+        .source {
+            text-decoration: none;
+            color: #7c7c7c;
+            margin-right: 30px;
+        }
+
+        .source:hover {
+            background-color: #c790ef;
+            color: aliceblue
+        }
+
+        /*저작권*/
+
+        #footer p {
+            font-size: 11px;
+            padding-bottom: 3px;
+            margin-left: 300px;
+        }
+
+        #footer address1 {
+            font-size: 10px;
+            color: #626262;
+            margin-left: 300px;
+        }
+
+        #footer address2 {
+            font-size: 10px;
+            color: #626262;
+            padding-left: 15px;
+        }
+
+        #footer address3 {
+            font-size: 10px;
+            color: #626262;
+            padding-left: 15px;
+        }
+
+        /*푸터*/
+
+        #footer {
+            border-top: 1px solid #e9e6ea;
+            padding-top: 20px;
+            margin-bottom: 50px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- 헤더 -->
+    <header>
+        <div id="headA">
+            <h1><a href="index.html" class="site"><img src="./img/rogo2.png"></a></h1>
+        </div>
+        <div id="headB">
+            <ul id="main_menu">
+                <li><a href="profile.html">PROFIL</a></li>
+                <li><a href="hw01.html">HW01</a></li>
+                <li><a href="hw02.html">HW02</a></li>
+                <li><a href="hw03.html">HW03</a></li>
+                <li><a href="hw04.html">HW04</a></li>
+                <li><a href="hw05.html">HW05</a></li>
+                <li><a href="portfolio.html">PORTFOLIO</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <!-- 웹표준 시작 -->
+    <h1><b>1.웹 표준</b></h1>
+    <br>
+    <h2><strong>웹 표준의 정의</strong></h2>
+    <p>월드 와이드 웹(WWW)을 <B>구현하기 위해</B> 따라야 할 표준 또는 규격.</p>
+    <p>다양한 웹 기술을 통해 수많은 콘텐츠가 공유되고 확산되면서, 웹 접근성, 사생활 보호, 보안, 국제화 등을 고려한 웹 기술의 표준화가 필요하게 되었다.</p>
+    <p>국제 표준화 기구로 월드 와이드 웹 컨소시엄(W3C)이 있으며, 대표적 웹 표준으로 하이퍼텍스트 생성 언어(HTML), 확장성 하이퍼텍스트 생성 언어(XHTML),</p>
+    종속형 시트(CSS: Cascading Style Sheets), 자바스크립트(JavaScript), 웹 사용에 대한 웹 콘텐츠 접근성 지침 등이 있다.
+    <br>
+    <br>
+    <br>
+    <br>
+    <!-- 웹 표준이 중요한 이유 시작-->
+    <h2><strong>웹 표준이 중요한 이유</strong></h2>
+    <p>산업표준이 왜 존재하는지, 도량형이 왜 존재하는지 생각해 보면 이유가 명확해진다.</p>
+    <p>산업현장에서 부품들의 표준화가 돼 있지 않으면 업체마다 서로 호환이 되지 않고, 같은 업체에서 생산하는 부품도 품질보장이 되질 않을 것이다.</p>
+    <p>웹 환경은 본질적으로 '통신'이기 때문에 더욱 더 표준화가 중요해진다. 비표준 '부품'이야 자기네 제품에만 독점적으로 사용할 거라면 크게 상관없지만 웹은 누가 어떤 장치를 어떤 방식으로 <b>사용할지를 제공자가 통제할 수 없기 때문이다.</b></p>
+    <p>>웹 표준이 없던 1990년대 말 ~ 2000년대 초반에는 웹 사이트 개발자는 사실상 두 개의 사이트를 만들어야 했다. 인터넷 익스플로러용과 넷스케이프용의 두 개.</p>
+    <p>실질적으로는 각종 핵과 브라우저 판별 코드를 삽입해야 해서 3배의 노동이 들었다. 표준이 없으면 이렇게 더 많은 노동력과 시간이 든다. 사회 전체적인 비용이 증가하는 것이다.</p>
+    시간과 예산이 빠듯한 상황에서 웹 개발자는 결국 하나만을 선택하고 나머지를 버릴 수밖에 없다. <b>이는 정보 제공에 차별을 발생시킨다.</b>
+    <br>
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
+    <br>
+    <!-- 웹 접근성 시작 -->
+    <h1><b>2.웹 접근성</b></h1>
+    <br>
+    <h2><strong>웹 접근성의 정의</strong></h2>
+    <p>비장애인과 장애인의 구분 없이 모든 사람이 웹 사이트를 <b>자유롭게 이용할 수 있게 하는 권리를 말한다.</b></p>
+    <p>청각 장애인을 위해 음성으로 서비스되는 콘텐츠에 자막을 넣어주는 것, 시각장애인을 위해 사운드를 넣어 소리로 웹을 사용할 수 있도록 하는 것이나 </p>
+    <p>보이스 명령으로 검색할 수 있도록 하는 것, 마우스 이용에 어려움을 겪는 지체장애인을 위해 키보드나 다른 입력장치를 통해 인터넷 이용을 보장하는 것 등이 이에 해당한다.</p>
+    [네이버 지식백과]
+    <br>
+    <br>
+    <br>
+    <!-- 웹 접근성의 필요성 시작 -->
+    <h2><strong>웹 접근성의 필요성</strong></h2>
+    <br>
+    <p>예를 들어 시각장애인의 경우 화면을 눈으로 볼 수 없기 때문에 그렇지 않은 사람과 같은 방식으로는 웹페이지를 이용할 수 없다.</p>
+    <p>그래서 '스크린 리더'라는 별도의 소프트웨어를 컴퓨터에 설치해서 인터넷을 이용한다. 스크린 리더는 모니터에 비춰지는 내용을 인식해서 음성, 점자로 출력해주는 역할을 한다.</p>
+    <p> 예를 들어 화면에 '메뉴'라는 텍스트가 있으면 이를 인식해서 '메뉴'라는 음성이 나오는 방식이다. </p>
+    <p>시각장애인은 이를 이용해 눈으로 보는 대신 소리로 들으면서 웹페이지에 담긴 정보를 이해할 수 있다.</p>
+    <p>하지만 스크린 리더는 소프트웨어에 불과하므로 스스로 웹페이지의 내용을 분석해서 이건 무슨 내용이고 저건 무슨 내용이다라는 걸 이해할 수 없다.</p>
+    <p>특히 이미지의 경우가 그렇다. '메뉴'라고 텍스트로 집어 넣지 않고 메뉴라고 그려진 이미지를 사용하면 비 시각 장애인의 눈에는 똑같이 메뉴라고 보이지만 소프트웨어 입장에서는 그저 이미지일 뿐이다. </p>
+    <p>그 이미지 안에 그려진 내용을 인식하는 것은 불가능하다. 그래서 되도록이면 이미지를 사용하지 말고 소스 코드에 내용을 그대로 담는 것이 권장되며, 부득이하게 이미지를 사용할 경우 반드시 이 이미지가 어떤 내용인지 설명을 추가해야 한다.</p>
+    <!--본문 내용 끝 -->
+    <!-- 출처 -->
+    <footer>
+        <div id="footer">
+            <p> <a href="https://terms.naver.com/entry.nhn?docId=3435628&cid=42346&categoryId=42346" target="출처_blank" class="source">Copyright&copy; Go to Source</a></p>
+            <p> <a href="index.html" target="index_blank" class="source">Go to index</a></p>
+            <address1>EMAIL : ekrwld4521@naver.com</address1>
+            <address2> PHONE NUMBER : 01026960000</address2>
+            <address3> Copyright&copy K.HeeJin</address3>
+        </div>
+    </footer>
+</body>
+
+</html>
