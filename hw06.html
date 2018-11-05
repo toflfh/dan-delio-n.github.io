@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>웹표준</title>
+    <style>
+        /* 헤더*/
+        header {
+            max-width: 1500px;
+        }
+
+        #headA {
+            display: inline-block;
+            line-height: 60px;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-bottom: 0px;
+
+        }
+
+        #headA a:hover {
+            background-color: #000000;
+        }
+
+        #headB {
+            float: right;
+            margin-right: 20px;
+            color: aliceblue;
+            padding-bottom: 16px;
+        }
+
+        /*메인메뉴*/
+
+        #main_menu ul {
+            margin: 0px;
+            padding: 0px;
+            margin-top: 10px;
+        }
+
+        #main_menu li {
+            list-style-type: none;
+            display: inline-block;
+            padding: 0px 0px 5px 0px;
+            margin-top: 18px;
+        }
+
+        #main_menu li a {
+            text-decoration: none;
+            color: #8c29c1;
+            padding: 20px 5px;
+            margin-top: 10px;
+            transform: scale(1);
+            transition: all 0.5s;
+        }
+
+        #main_menu a:hover {
+            color: #ffffff;
+            background-color: #be59f4;
+            border-bottom: 2px solid black;
+            transform: scale(1.4);
+            opacity: 1;
+        }
+
+        .source {
+            text-decoration: none;
+            color: #7c7c7c;
+            margin-right: 30px;
+        }
+
+        .source:hover {
+            background-color: #c790ef;
+            color: aliceblue
+        }
+
+        /*저작권*/
+
+        #footer p {
+            font-size: 11px;
+            padding-bottom: 3px;
+            margin-left: 300px;
+        }
+
+        #footer address1 {
+            font-size: 10px;
+            color: #626262;
+            margin-left: 300px;
+        }
+
+        #footer address2 {
+            font-size: 10px;
+            color: #626262;
+            padding-left: 15px;
+        }
+
+        #footer address3 {
+            font-size: 10px;
+            color: #626262;
+            padding-left: 15px;
+        }
+
+        /*푸터*/
+
+        #footer {
+            border-top: 1px solid #e9e6ea;
+            padding-top: 20px;
+            margin-bottom: 50px;
+        }
+        /*body*/
+        body{
+            font-family: 나눔스퀘어라운드;
+            background-color: #f8f5fd;
+        }
+        #wrapper {
+            margin-left: 50px;
+            margin-bottom:50px;
+            margin-top: 50px;
+            text-align: center;
+        }
+        .title{
+            margin-top:100px;
+            margin-bottom: 40px;
+            color:#9b00a8;
+        }
+        h3{
+            margin-top:80px;
+            margin-bottom: 50px;
+            color: #525252;
+            
+        }
+        li{
+            list-style-type: none;
+            color: #868686
+        }
+        p{
+            margin-bottom: -5px;
+        }
+        table,
+        td,
+        th {
+            border: solid 1px #a7a7a7;
+            color: #7b7b7b;
+            font-family: 나눔스퀘어라운드;
+            border-collapse: collapse;
+            padding: 10px;
+
+        }
+
+        table {
+            margin: auto;
+        }
+        .top{
+            color: #ffffff;
+            background-color: #cfc7ff;
+        }
+        .left{
+            background-color:#f7f0ff
+            
+        }
+    
+    </style>
+</head>
+
+<body>
+    <!-- 헤더 -->
+    <header>
+        <div id="headA">
+            <h1><a href="index.html" class="site"><img src="./img/rogo2.png"></a></h1>
+        </div>
+        <div id="headB">
+            <ul id="main_menu">
+                <li><a href="profile.html">PROFIL</a></li>
+                <li><a href="hw01.html">HW01</a></li>
+                <li><a href="hw02.html">HW02</a></li>
+                <li><a href="hw03.html">HW03</a></li>
+                <li><a href="hw04.html">HW04</a></li>
+                <li><a href="hw05.html">HW05</a></li>
+                <li><a href="hw06.html">HW06</a></li>
+                <li><a href="portfolio.html">PORTFOLIO</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <!-- 웹표준 시작 -->
+    <div id="wrapper">
+        <h1 class="title">Web Standards</h1>
+        <img src="./img/web9.png" alt="web">
+        <h3>º웹의 역사º</h3>
+        <ul>
+            <li>
+                <p>초창기 웹은 인터넷을 통해 문서형태의 정적인 정보를 공유하는 것이 주된 목적이였다.</p>
+                <p>네트워크 속도나 서버, pc 사양등의 제약으로 인해 텍시트와 이미지 정도만 표현 할 수 있었다</p>
+                <p>따라서 표준 규격인 HTML은 태그를 이용하여 데이터의 구조를 명기하는 웹 문서를 위한 마크업 언어 수준 정도에 지나지 않는다.</p>
+                <p>하지만 시간의 흐름에 따라 웹 환경은 많은 변화를 맞이하게 되었다</p>
+                <p>네트워크 속도, 서버, pc등의 물리적인 제약 사항이 줄어들면서 기존의 텍스트와 이미지 외에 비디오와 음성등과 같은 더 많은 표현이 가능해졌다.</p>
+                <p>이와 같은 발전을 통해 개발된 HTML5는 시장의 요구, 비용절감의 효과, 네이티브 앱 개발 대비 생산성 증대의 가치를 가지게 되었다.</p>
+            </li>
+        </ul>
+        <h3>º웹 정의º</h3>
+        <ul>
+            <li>
+                <p>월드 와이드 웹(WWW)을 구현하기 위해 따라야 할 표준 또는 규격.</p>
+                <p>다양한 웹 기술을 통해 수많은 콘텐츠가 공유되고 확산되면서, 웹 접근성, 사생활 보호, 보안, 국제화 등을 고려한 웹 기술의 표준화가 필요하게 되었다.</p>
+                <p>국제 표준화 기구로 월드 와이드 웹 컨소시엄(W3C)이 있으며, 대표적 웹 표준으로 하이퍼텍스트 생성 언어(HTML), 확장성 하이퍼텍스트 생성 언어(XHTML),</p>
+                종속형 시트(CSS: Cascading Style Sheets), 자바스크립트(JavaScript), 웹 사용에 대한 웹 콘텐츠 접근성 지침 등이 있다.
+            </li>
+        </ul>
+        <h3>º브라우저 전쟁º</h3>
+        <ul>
+            <li><img src="./img/web4.png" alt="web"></li>
+        </ul>
+        <h3>º웹 표준이란?º</h3>
+        <ul>
+            <li>
+                <img src="./img/web3.png" alt="web">
+                <p>이와같이 웹이라는 것은 모든 사람이 손쉽게 접근하여 정보를 공유할 수 있는 공간이여야 한다.</p>
+                <p>이를 기반으로 하여 웹 표준이라는 것이 나타나게 되었으며, 사물 인터넷 시대에 가장 주목받는 하나의 기술로 자리매김 하게 되었다.</p>
+            </li>
+        </ul>
+        <h3>º웹 표준의 중요성º</h3>
+        <ul>
+            <li>
+                <p>산업표준이 왜 존재하는지, 도량형이 왜 존재하는지 생각해 보면 이유가 명확해진다.</p>
+                <p>산업현장에서 부품들의 표준화가 돼 있지 않으면 업체마다 서로 호환이 되지 않고, </p>
+                <p>같은 업체에서 생산하는 부품도 품질보장이 되질 않을 것이다.</p>
+                <p>웹 환경은 본질적으로 '통신'이기 때문에 더욱 더 표준화가 중요해진다.</p>
+                <p>비표준 '부품'이야 자기네 제품에만 독점적으로 사용할 거라면 크게 상관없지만</p>
+                <p> 웹은 누가 어떤 장치를 어떤 방식으로 사용할지를 제공자가 통제할 수 없기 때문이다.</p>
+                <p>웹 표준이 없던 1990년대 말 ~ 2000년대 초반에는 웹 사이트 개발자는 사실상 두 개의 사이트를 만들어야 했다.</p>
+                <p>인터넷 익스플로러용과 넷스케이프용의 두 개.</p>
+                <p>실질적으로는 각종 핵과 브라우저 판별 코드를 삽입해야 해서 3배의 노동이 들었다.</p>
+                <p> 표준이 없으면 이렇게 더 많은 노동력과 시간이 든다. 사회 전체적인 비용이 증가하는 것이다.</p>
+                <p>시간과 예산이 빠듯한 상황에서 웹 개발자는 결국 하나만을 선택하고 나머지를 버릴 수밖에 없다.</p>
+                <p>이는 정보 제공에 차별을 발생시킨다.</p>
+            </li>
+        </ul>
+        <h3>º웹 표준 도입의 효과º</h3>
+        <table border=1>
+            <tr>
+                <th colspan="2" class="top">웹 표준 도입 효과</th>
+            </tr>
+            <tr>
+                <th rowspan="3" class="left">비지니스적 분석</th>
+                <th>버전 관리 및 유지 보수의용이성</th>
+            </tr>
+            <tr>
+                <th>넓은 확장성 신기술 도입이 용이</th>
+            </tr>
+            <tr>
+                <th>더 넓은 사용자층 확보</th>
+            </tr>
+            <tr>
+                <th rowspan="3" class="left">접근성 분석</th>
+                <th>멀티 브라우징 기능</th>
+            </tr>
+            <tr>
+                <th>멀티 플렛폼</th>
+            </tr>
+            <tr>
+                <th>다양한 사용자의 접근 가능</th>
+            </tr>
+            <tr>
+                <th rowspan="2" class="left">개발 지향적 분석</th>
+                <th>트래픽 컨트롤</th>
+            </tr>
+            <tr>
+                <th>확장성 및 신기술 도입 용이</th>
+            </tr>
+
+            <tr>
+                <th rowspan="2" class="left">디자인 지향적 분석</th>
+                <th>수정/변경의 자유로움</th>
+            </tr>
+            <tr>
+                <th>디자인 기간 단축</th>
+            </tr>
+        </table>
+        <h1 class="title">Web Accessibility</h1>
+        <h3>º웹 접근성의 정의º</h3>
+        <ul>
+            <li>
+                <p>비장애인과 장애인의 구분 없이 모든 사람이 웹 사이트를 자유롭게 이용할 수 있게 하는 권리를 말한다.</p>
+                <p>청각 장애인을 위해 음성으로 서비스되는 콘텐츠에 자막을 넣어주는 것,</p>
+                <p> 시각장애인을 위해 사운드를 넣어 소리로 웹을 사용할 수 있도록 하는 것이나 </p>
+                <p>보이스 명령으로 검색할 수 있도록 하는 것, 마우스 이용에 어려움을 겪는 지체장애인을 위해 키보드나</p>
+                <p>다른 입력장치를 통해 인터넷 이용을 보장하는 것 등이 이에 해당한다.</p>
+            </li>
+        </ul>
+
+        <h3>º웹 접근성의 필요성º</h3>
+        <ul>
+            <li>
+                <p>예를 들어 시각장애인의 경우 화면을 눈으로 볼 수 없기 때문에 </p>
+                <p>그렇지 않은 사람과 같은 방식으로는 웹페이지를 이용할 수 없다.</p>
+                <p>그래서 '스크린 리더'라는 별도의 소프트웨어를 컴퓨터에 설치해서 인터넷을 이용한다.</p>
+                <p>스크린 리더는 모니터에 비춰지는 내용을 인식해서 음성, 점자로 출력해주는 역할을 한다.</p>
+                <p> 예를 들어 화면에 '메뉴'라는 텍스트가 있으면 이를 인식해서 '메뉴'라는 음성이 나오는 방식이다. </p>
+                <p>시각장애인은 이를 이용해 눈으로 보는 대신 소리로 들으면서 웹페이지에 담긴 정보를 이해할 수 있다.</p>
+                <p>하지만 스크린 리더는 소프트웨어에 불과하므로 스스로 웹페이지의 내용을 분석해서 이건 무슨 내용이고 저건 무슨 내용이다라는 걸 이해할 수 없다.</p>
+                <p>특히 이미지의 경우가 그렇다. '메뉴'라고 텍스트로 집어 넣지 않고 메뉴라고 그려진 이미지를 사용하면</p>
+                <p> 비 시각 장애인의 눈에는 똑같이 메뉴라고 보이지만 소프트웨어 입장에서는 그저 이미지일 뿐이다. </p>
+                <p>그 이미지 안에 그려진 내용을 인식하는 것은 불가능하다.</p>
+                <p>그래서 되도록이면 이미지를 사용하지 말고 소스 코드에 내용을 그대로 담는 것이 권장되며,</p>
+                <p>부득이하게 이미지를 사용할 경우 반드시 이 이미지가 어떤 내용인지 설명을 추가해야 한다.</p>
+            </li>
+        </ul>
+        <h3>º정보통신 환경의 이해º</h3>
+        <table border="1">
+            <tr>
+                <th colspan="2" class="top">장애 유형</th>
+                <th class="top">특징</th>
+                <th class="top">보완대책</th>
+            </tr>
+            <tr>
+                <th rowspan="3" class="left">시각장애</th>
+                <th class="left">전맹</th>
+                <th>모니터를 볼 수 없음</th>
+                <th>스크린 리더</th>
+            </tr>
+            <tr>
+                <th class="left">저시력</th>
+                <th>모니터 사용이 일부 가능함</th>
+                <th>화면확대/고대비</th>
+            </tr>
+            <tr>
+                <th class="left">색맹</th>
+                <th>색 구별 불가</th>
+                <th>색상에만 의존하지 않기/고대비</th>
+            </tr>
+            <tr>
+                <th colspan="2" class="left">청각 장애</th>
+                <th>사운드, 오디오 등을 청취 할 수 없음</th>
+                <th>수화, 시각정보 제공</th>
+            </tr>
+            <tr>
+                <th rowspan="2" class="left">지체장애</th>
+                <th class="left">상지장애</th>
+                <th>손을 사용할 수 없음</th>
+                <th>마우스 대체 방법, 키보드만 사용</th>
+            </tr>
+            <tr>
+                <th class="left">기타</th>
+                <th>움직임이 어려움</th>
+                <th>충분한 시간 제공</th>
+            </tr>
+            <tr>
+                <th colspan="2" class="left">언어 장애</th>
+                <th>복잡한 용어, 어려운 용어 이해 불가능</th>
+                <th>쉬운 언어 사용</th>
+            </tr>
+        </table>
+    </div>
+
+    <!-- 출처 -->
+    <footer>
+        <div id="footer">
+            <p> <a href="https://terms.naver.com/entry.nhn?docId=3435628&cid=42346&categoryId=42346" target="출처_blank" class="source">Copyright&copy; Go to Source (web)</a></p>
+            <p><a href="http://jeongchul.tistory.com/453" target="출처_blank" class="source">Copyright&copy; Go to Source (Web Standards)</a></p>
+            <p><a href="http://www.websoul.co.kr/accessibility/define.asp" target="출처_blank" class="source">Copyright&copy; Go to Source (Web Accessibility)</a></p>
+            <p> <a href="index.html" target="index_blank" class="source">Go to index</a></p>
+            <address1>EMAIL : ekrwld4521@naver.com</address1>
+            <address2> PHONE NUMBER : 01026960000</address2>
+            <address3> Copyright&copy K.HeeJin</address3>
+        </div>
+    </footer>
+</body>
+
+</html>
