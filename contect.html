@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        /* 헤더*/
+        header {
+            max-width: 1500px;
+            padding-bottom: 50px;
+        }
+
+        #headA {
+            display: inline-block;
+            line-height: 60px;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-bottom: 0px;
+
+        }
+
+        #headA a:hover {
+            background-color: #ffffff;
+        }
+
+        #headB {
+            float: right;
+            margin-right: 20px;
+            color: aliceblue;
+            padding-bottom: 16px;
+        }
+
+        /*메인메뉴*/
+
+        #main_menu ul {
+            margin: 0px;
+            padding: 0px;
+            margin-top: 10px;
+        }
+
+        #main_menu li {
+            list-style-type: none;
+            display: inline-block;
+            padding: 0px 0px 5px 0px;
+            margin-top: 18px;
+        }
+
+        #main_menu li a {
+            text-decoration: none;
+            color: #ffffff;
+            padding: 20px 5px;
+            margin-top: 10px;
+            transform: scale(1);
+            transition: all 0.5s;
+            margin-bottom: 50px;
+        }
+
+        #main_menu a:hover {
+            color: #ffffff;
+            background-color: #be59f4;
+            border-bottom: 2px solid #ffffff;
+            transform: scale(1.4);
+            opacity: 1;
+        }
+        
+        /* contect */
+
+        .source {
+            text-decoration: none;
+            color: #7c7c7c;
+            margin-right: 30px;
+        }
+
+        .source:hover {
+            background-color: #c790ef;
+            color: aliceblue
+        }
+        body{
+            font-family: 나눔스퀘어라운드;
+            background-color: #d1afef
+        }
+        h3{
+            font-size: 30px;
+            color:#ba97d8;
+            text-align: center;
+            
+        }
+        table,td,tr{
+            border-style: none;
+          
+        }
+        td{
+            padding-right: 10px;
+            padding-bottom: 5px;
+        }
+        #warpper{
+            color:#646464;
+            margin: auto;
+            margin-bottom: 30px;
+        }
+        #send{
+             margin: auto; 
+        }
+        #background{
+            background-color: #fffeff;
+            padding-top:3px;
+            padding-bottom:50px;
+            margin-left: 250px;
+            margin-right:250px;
+        }
+        #sand1{
+            font-size: 15px;
+            margin-right: 15px;
+            background-color:#d1afef;
+            border-style: none;
+            color: #ffffff;
+            padding-top:3px;
+            padding-left:5px;
+            padding-bottom: 3px;
+        }
+         #sand2{
+            font-size: 15px;
+            background-color:#d1afef;
+            border-style: none;
+            color: #ffffff;
+            padding-top:3px;
+            padding-left:5px;
+            padding-bottom: 3px;
+        }
+
+
+        /*저작권*/
+        #footer p {
+            font-size: 11px;
+            padding-bottom: 3px;
+            margin-left: 300px;
+        }
+
+        #footer address1 {
+            font-size: 10px;
+            color: #626262;
+            margin-left: 300px;
+        }
+
+        #footer address2 {
+            font-size: 10px;
+            color: #626262;
+            padding-left: 15px;
+        }
+
+        #footer address3 {
+            font-size: 10px;
+            color: #626262;
+            padding-left: 15px;
+        }
+
+        /*푸터*/
+        #footer {
+            border-top: 1px solid #cabbce;
+            padding-top: 20px;
+            margin-bottom: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <!--헤더-->
+    <header>
+        <div id="headA">
+            <h1><a href="index.html" class="site"><img src="./img/rogo2.png"></a></h1>
+        </div>
+        <div id="headB">
+            <ul id="main_menu">
+                <li><a href="contect.html">CONTECT</a></li>
+                <li><a href="profile.html">PROFIL</a></li>
+                <li><a href="hw01.html">HW01</a></li>
+                <li><a href="hw02.html">HW02</a></li>
+                <li><a href="hw03.html">HW03</a></li>
+                <li><a href="hw04.html">HW04</a></li>
+                <li><a href="hw05.html">HW05</a></li>
+                <li><a href="hw06.html">HW06</a></li>
+                <li><a href="portfolio.html">PORTFOLIO</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <!--본문-->
+    <div id="background">
+        <h3>Contect</h3>
+        <form>
+            <table border="1" id="warpper">
+                <tr>
+                    <td>이름</td>
+                    <td> <input type="text" name="uid"><br></td>
+                </tr>
+                <tr>
+                    <td>비밀번호</td>
+                    <td><input type="password" name="upw"><br></td>
+                </tr>
+                <tr>
+                    <td>이메일</td>
+                    <td> <input type="email" name="email"></td>
+                </tr>
+                <tr>
+                   <td></td>
+                    <td>@<select name="cars" size="1">
+                            <option value="google">구글</option>
+                            <option value="naver">네이버</option>
+                            <option value="daum">다음</option>
+                            <option value="">직접입력</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>제목</td>
+                    <td><input type="text" name="text"></td>
+                </tr>
+                <tr>
+                    <td>내용</td>
+                    <td> <textarea name="message" rows="1" cols="22"></textarea></td>
+                </tr>
+            </table>
+            <table id="send">
+                <td><input type="submit" value="전송" id="sand1"> <input type="submit" value="재설정" id="sand2"> </td>
+            </table>
+        </form>
+    </div>
+    <!--저작권-->
+    <footer>
+        <div id="footer">
+            <p> <a href="index.html" target="index_blank" class="source">Go to index</a></p>
+            <address1>EMAIL : ekrwld4521@naver.com</address1>
+            <address2> PHONE NUMBER : 01026960000</address2>
+            <address3> Copyright&copy K.HeeJin</address3>
+        </div>
+    </footer>
+</body>
+</html>
